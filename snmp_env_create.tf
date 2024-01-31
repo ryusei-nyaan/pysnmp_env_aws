@@ -118,8 +118,8 @@ resource "aws_instance" "test-instance-manager" {
               sudo yum install -y firewalld 
               sudo systemctl start firewalld.service
               sudo systemctl start snmpd
-              sudo yum install -y pip3
-              sudo pip3 -y install pysnmp
+              sudo yum install -y pip
+              sudo pip install pysnmp
               EOF
   tags = {
     Name = "test-instance-manager"
